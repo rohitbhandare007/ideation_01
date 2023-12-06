@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "e8cf9148-fe82-44f7-9165-86cd6ca32276",
+		"name": "Code Automators_WebServices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15446056"
+	},
+	"item": [
+		{
+			"name": "Fetch_Contact_Fields",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "password",
+							"value": "4vjZgSv8jPJpRT7c2muudUzc5u5DEWBZ",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "83000004950063",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://qanike.radiusbycampusmgmt.com/crm/webservice/modules/Contacts",
+					"protocol": "https",
+					"host": [
+						"qanike",
+						"radiusbycampusmgmt",
+						"com"
+					],
+					"path": [
+						"crm",
+						"webservice",
+						"modules",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Contact",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "password",
+							"value": "4vjZgSv8jPJpRT7c2muudUzc5u5DEWBZ",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "83000004950063",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qanike.radiusbycampusmgmt.com/crm/webservice/modules/Contacts/83000007148003",
+					"protocol": "https",
+					"host": [
+						"qanike",
+						"radiusbycampusmgmt",
+						"com"
+					],
+					"path": [
+						"crm",
+						"webservice",
+						"modules",
+						"Contacts",
+						"83000007148003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Contact",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "password",
+							"value": "4vjZgSv8jPJpRT7c2muudUzc5u5DEWBZ",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "83000004950063",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"createFields\":\r\n{\r\n\"First Name\": \"Harshada_WS_Auto\",\r\n\"Last Name\": \"Margi_WS_Auto\",\r\n\"Email\": \"HarshadaWS_Auto@gmail.com\"\r\n\r\n}, \"returnFields\":\r\n[ \"First Name\"\r\n]\r\n}"
+				},
+				"url": {
+					"raw": "https://qanike.radiusbycampusmgmt.com/crm/webservice/modules/Contacts",
+					"protocol": "https",
+					"host": [
+						"qanike",
+						"radiusbycampusmgmt",
+						"com"
+					],
+					"path": [
+						"crm",
+						"webservice",
+						"modules",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_InvalidContact",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "password",
+							"value": "4vjZgSv8jPJpRT7c2muudUzc5u5DEWBZ",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "83000004950063",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"createFields\":\r\n{\r\n\"First Name\": \"Harshada_WS_Auto1\",\r\n\"Last Name\": \"Margi_WS_Auto1\",\r\n\"Email\": \"Harshadan@@yaho.com\"\r\n\r\n}, \"returnFields\":\r\n[ \"First Name\"\r\n]\r\n}"
+				},
+				"url": {
+					"raw": "https://qanike.radiusbycampusmgmt.com/crm/webservice/modules/Contacts",
+					"protocol": "https",
+					"host": [
+						"qanike",
+						"radiusbycampusmgmt",
+						"com"
+					],
+					"path": [
+						"crm",
+						"webservice",
+						"modules",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

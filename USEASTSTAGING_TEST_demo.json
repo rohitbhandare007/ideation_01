@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "a3314c4f-835b-4049-87bd-c1c656bbe2fc",
+		"name": "USEASTSTAGING_TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15446056"
+	},
+	"item": [
+		{
+			"name": "Create_Contact_Stg",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "password",
+							"value": "qAJ5StLvzHw5JV0zSnbiL1RcFOm8S5dB",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "492000016945154",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"createFields\":\r\n{\r\n\"First Name\": \"Harshada_Auto_Stg1\",\r\n\"Last Name\": \"Margi_Auto_Stg1\",\r\n\"Email\": \"Harshadan1@yahoo.com\"\r\n\r\n}, \"returnFields\":\r\n[ \"First Name\"\r\n]\r\n}"
+				},
+				"url": {
+					"raw": "https://useaststaging.radiusbycampusmgmt.com/crm/webservice/modules/Contacts",
+					"protocol": "https",
+					"host": [
+						"useaststaging",
+						"radiusbycampusmgmt",
+						"com"
+					],
+					"path": [
+						"crm",
+						"webservice",
+						"modules",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchContactFields_Stg",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "password",
+							"value": "qAJ5StLvzHw5JV0zSnbiL1RcFOm8S5dB",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "492000016945154",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://useaststaging.radiusbycampusmgmt.com/crm/webservice/modules/Contacts",
+					"protocol": "https",
+					"host": [
+						"useaststaging",
+						"radiusbycampusmgmt",
+						"com"
+					],
+					"path": [
+						"crm",
+						"webservice",
+						"modules",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchContact_Stg",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "password",
+							"value": "qAJ5StLvzHw5JV0zSnbiL1RcFOm8S5dB",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "492000016945154",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://useaststaging.radiusbycampusmgmt.com/crm/webservice/modules/Contacts/492000016189095",
+					"protocol": "https",
+					"host": [
+						"useaststaging",
+						"radiusbycampusmgmt",
+						"com"
+					],
+					"path": [
+						"crm",
+						"webservice",
+						"modules",
+						"Contacts",
+						"492000016189095"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateContact_InvalidEmail",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "password",
+							"value": "qAJ5StLvzHw5JV0zSnbiL1RcFOm8S5dB",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "492000016945154",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"createFields\":\r\n{\r\n\"First Name\": \"Harshada_Auto_Stg2\",\r\n\"Last Name\": \"Margi_Auto_Stg2\",\r\n\"Email\": \"Harshadan2@@yahoo.com\"\r\n\r\n}, \"returnFields\":\r\n[ \"First Name\"\r\n]\r\n}"
+				},
+				"url": {
+					"raw": "https://useaststaging.radiusbycampusmgmt.com/crm/webservice/modules/Contacts",
+					"protocol": "https",
+					"host": [
+						"useaststaging",
+						"radiusbycampusmgmt",
+						"com"
+					],
+					"path": [
+						"crm",
+						"webservice",
+						"modules",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
